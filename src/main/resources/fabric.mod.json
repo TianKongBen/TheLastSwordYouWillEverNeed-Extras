@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "tlsywen-extra",
+	"version": "${version}",
+	"name": "The Last Sword You Will Ever Need: Extras",
+	"description": "This is an affiliate mod for The Last Sword You Will Ever Need that incorporates some interesting ideas",
+	"authors": [
+		"TianBen!"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/tlsywenextras/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.tianben.tlsywenextras.tlsywenextras"
+		],
+		"fabric-datagen": [
+          "net.tianben.tlsywenextras.tlsywenextrasdatagenerator"
+		],
+		"client": [
+          "net.tianben.tlsywenextras.tlsywenextrasclient"
+		]
+	},
+	"mixins": [
+		"tlsywen.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"fabric-api": "*",
+		"tlsywen": ">=fabric-0.1.9+mc1.20.1"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"parent": {
+				"id": "tlsywen"
+			}
+		}
+	}
+}
